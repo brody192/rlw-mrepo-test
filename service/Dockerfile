@@ -3,10 +3,8 @@ FROM golang:1.23.0-alpine AS builder
 
 WORKDIR /app
 
-COPY ../pkg /app/pkg
-RUN ls -la /app/pkg
-COPY . /app/service
-RUN ls -la /app/service
+COPY ../pkg /app/pk
+COPY ./service /app/service
 
 WORKDIR /app/service
 
