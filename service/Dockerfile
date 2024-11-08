@@ -5,7 +5,7 @@ WORKDIR /app
 
 COPY ../pkg /app/pkg
 RUN ls -la /app/pkg
-COPY ./service /app/service
+COPY . /app/service
 RUN ls -la /app/service
 
 WORKDIR /app/service
